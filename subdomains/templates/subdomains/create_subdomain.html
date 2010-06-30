@@ -1,0 +1,14 @@
+{% extends 'subdomains/base.html' %}
+
+{% block content %}
+  <form method='post'>
+    {% csrf_token %}
+    <table>
+      {{ subdomain_form }}
+      <tr>
+        <td> &nbsp; </td>
+        <td> <input type='submit' value='Create' /> </td>
+      </tr>
+    </table>
+  </form>
+{% endblock content %}
